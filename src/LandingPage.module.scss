@@ -1,0 +1,101 @@
+.container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.heroSectionContainer {
+  height: 1400px;
+  background-color: #181818;
+  padding-left: 120px;
+}
+.title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 170px;
+  height: 96px;
+  padding: 12px 24px 32px 0px;
+  font-family: DM Sans;
+  font-style: bold;
+  font-size: 20px;
+  line-height: 26px;
+  color: #fbf6ef;
+}
+.heroSection {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.heroText {
+  width: 580px;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 52px;
+  color: #fbf6ef;
+}
+.heroTextBlack {
+  @extend .heroText;
+  color: #181818;
+}
+.mar_top_48 {
+  margin-top: 48px;
+}
+.mar_top_24 {
+  margin-top: 24px;
+}
+.heroDescriptionContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80.5%;
+  margin-top: 116px;
+  background-color: #fbf6ef;
+  border-radius: 56px 0px 0px 56px;
+  padding: 120px 80px 120px 80px;
+}
+.heroDescription {
+  width: 500px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.buildCycleContainer {
+  background-color: #fbf6ef;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 786px;
+  padding: 120px;
+}
+.buildCycleText {
+  width: 580px;
+}
+.services {
+  height: 1400px;
+  background-color: #181818;
+  padding: 120px;
+  text-align: center;
+}
+.servicesCardsContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 41px;
+  margin-top: 80px;
+}
+.usp{
+  background-color: #fbf6ef;
+  height: 300px;
+  padding:120px 300px 120px 300px;
+  text-align: center;
+}
+.teamContainer{
+  padding: 160px;
+  text-align: center;
+  height: 1539px;
+  background-image: url("./assets/images/background-image.png");
+}

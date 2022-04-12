@@ -1,0 +1,30 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width:373px;
+  height:295px ;
+  background-color: #fbf6ef;
+  padding: 48px 24px 48px 24px;
+  border-radius: 12px;
+  gap: 12px;
+}
+.cardImage {
+  text-align: center;
+}
+.cardTitle {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #181818;
+}
+.cardText {
+  text-align: center;
+  width: 325px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #747474;
+}
