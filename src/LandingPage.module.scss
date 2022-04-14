@@ -9,10 +9,12 @@
   padding-bottom: 120px;
   background-color: #191c27;
   padding-left: 120px;
-@media screen and (max-width: 768px) {
-  padding-left: 40px;
+
+  @media screen and (max-width: 768px) {
+    padding-left: 40px;
+  }
 }
-}
+
 .title {
   display: flex;
   justify-content: space-around;
@@ -33,10 +35,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-@media screen and (max-width: 768px) {
-  flex-direction: column;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 }
-}
+
 .heroText {
   width: 580px;
   font-family: Poppins;
@@ -44,27 +48,31 @@
   font-size: 32px;
   line-height: 52px;
   color: #fbf6ef;
-@media screen and (max-width: 768px) {
-  width: 100%;
-  font-size: 24px;
-  line-height: 40px;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    font-size: 24px;
+    line-height: 40px;
+  }
 }
-}
+
 .heroTextBlack {
   font-size: 40px;
   line-height: 60px;
   font-weight: 600;
   color: #191C27;
-  
+
   @media screen and (max-width: 768px) {
     font-size: 24px;
     line-height: 38px;
-  
+
   }
 }
+
 .mar_top_48 {
   margin-top: 48px;
 }
+
 .normalText {
   font-family: Poppins;
   font-weight: 400;
@@ -82,7 +90,7 @@
   background-color: #fbf6ef;
   border-radius: 56px 0px 0px 56px;
   padding: 60px;
-  
+
   @media screen and (max-width: 768px) {
     margin-left: 15px;
     flex-direction: column;
@@ -91,24 +99,26 @@
     border-radius: 8px;
     margin-top: 20px;
   }
-  }
-  
-  .dogImage {
-    @media screen and (max-width: 768px) {
-      width: 100%;
-      height: auto;
-    }
 }
+
+.dogImage {
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .heroDescription {
   width: 500px;
   font-size: 18px;
   font-weight: 500;
   line-height: 28px;
-@media screen and (max-width: 768px) {
-  width: 100%;
-  font-size: 14px;
-  line-height: 24px;
-}
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .heroImage {
@@ -116,6 +126,7 @@
   height: auto;
   margin-top: 60px;
 }
+
 .buildCycleContainer {
   background-color: #fbf6ef;
   display: flex;
@@ -123,16 +134,19 @@
   align-items: center;
   height: auto;
   padding: 120px;
-@media screen and (max-width: 768px) {
-  flex-direction: column;
-  padding: 40px 16px 40px 16px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 40px 16px 40px 16px;
+  }
 }
-}
+
 .buildCycleText {
   width: 580px;
-@media screen and (max-width: 768px) {
-  width: 100%;
-}
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .buildCycleImage {
@@ -142,6 +156,7 @@
     margin-top: 15px;
   }
 }
+
 .services {
   height: auto;
   background-color: #191c27;
@@ -151,18 +166,19 @@
   background-repeat: no-repeat;
   text-align: center;
   position: relative;
-  
+
   @media screen and (max-width: 768px) {
     padding: 40px 16px 40px 16px;
   }
-  }
-  
-  .pattern {
-    position: absolute;
-    top: 0;
-    left: 5%;
-    transform: translateY(-60px);
 }
+
+.pattern {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  transform: translateY(-60px);
+}
+
 .servicesCardsContainer {
   display: flex;
   width: 100%;
@@ -172,13 +188,15 @@
   gap: 41px;
   margin-top: 80px;
 }
+
 .usp {
   background-color: #fbf6ef;
   height: auto;
   padding: 120px 300px 120px 300px;
   text-align: center;
-@media screen and (max-width: 768px) {
-  padding: 40px 16px 40px 16px;
+
+  @media screen and (max-width: 768px) {
+    padding: 40px 16px 40px 16px;
   }
 }
 
@@ -187,9 +205,10 @@
   text-align: center;
   height: auto;
   background-image: url("./assets/images/background-image.png");
-@media screen and (max-width: 768px) {
-  padding: 40px 16px 40px 16px;
-}
+
+  @media screen and (max-width: 768px) {
+    padding: 40px 16px 40px 16px;
+  }
 }
 
 .teamCardsContainer {
@@ -306,13 +325,12 @@
 }
 
 .divider {
-  height: 1px;
-  width: 77%;
-  margin: 0 auto;
-  background-color: #191c27;
+  border-top: 1px solid #191c27;
+  margin: 0;
+  padding: 0;
 
   @media screen and (max-width: 768px) {
-    width: 100%;
+    border-top: 1px solid #191c27;
     margin: 10px 0px;
   }
 }
