@@ -92,12 +92,16 @@
   padding: 60px;
 
   @media screen and (max-width: 768px) {
-    margin-left: 15px;
+    margin-right: auto;
     flex-direction: column;
     text-align: center;
     padding: 40px 16px 40px 16px;
     border-radius: 8px;
     margin-top: 20px;
+  }
+  @media screen and (max-width: 480px) {
+    margin-left: 10px;
+    margin-right: auto;
   }
 }
 
@@ -239,7 +243,10 @@
 
 .div1 {
   align-self: flex-start;
-
+  
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 
 }
 
@@ -259,7 +266,6 @@
   }
   
   @media screen and (max-width: 768px) {
-    width: 92vw;
     margin: 0 auto;
   }
   
@@ -267,6 +273,9 @@
 
 .div3 {
   align-self: flex-start;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .div4 {
@@ -277,7 +286,7 @@
     margin-top: 20px;
     margin-right: 50px;
     margin-bottom: 20px;
-  
+    
   }
   @media screen and (max-width: 1024px) {
     margin-top: 0;
@@ -285,14 +294,16 @@
   }
   
   @media screen and (max-width: 768px) {
-    width: 92vw;
     margin: 0 auto;
   }
-
+  
 }
 
 .div5 {
   align-self: flex-start;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .contactContainer {
