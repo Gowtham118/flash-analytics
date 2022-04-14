@@ -1,9 +1,10 @@
 .smallButton {
   display: flex;
+  font-family: Poppins;
   justify-content: space-between;
   align-items: center;
   padding: 12px 32px;
-  width: 177px;
+  width: 200px;
   height: 48px;
   background: linear-gradient(
     102.98deg,
@@ -19,6 +20,23 @@
   font-size: 20px;
   line-height: 32px;
   color: #ffffff;
+  transition: font-size 0.3s ease-in-out;
+  
+  @media screen and (max-width: 768px) {
+    height: auto;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  }
+  
+  .arrow {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .smallButton:hover {
+    .arrow {
+      transform: translateX(8px);
+    }
 }
 .largeButton{
     @extend .smallButton;

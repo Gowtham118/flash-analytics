@@ -1,0 +1,91 @@
+.cardContainer {
+  position: relative;
+  // width: 535px;
+  height: auto;
+  border-radius: 24px;
+  padding: 32px 48px 32px 48px;
+  background-color: #fbf6ef;
+  flex: 1;
+
+  @media screen and (max-width: 1024px) {
+    padding: 10;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 20px;
+  }
+}
+
+.icon {
+  @media screen and (max-width: 768px) {
+    width: 196px;
+    height: 196px;
+  }
+}
+
+.rightIcon {
+  position: absolute;
+  top: -120px;
+  right: -120px;
+
+  @media screen and (max-width: 768px) {
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.leftIcon {
+  position: absolute;
+  top: -120px;
+  left: -120px;
+
+  @media screen and (max-width: 768px) {
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.title {
+  text-align: left;
+  margin-left: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #181818;
+
+  @media screen and (max-width: 768px) {
+    margin-left: 0;
+
+  }
+}
+
+.text {
+  margin-top: 24px;
+  margin-left: 30px;
+  width: 391px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #747474;
+
+  @media screen and (max-width: 768px) {
+    margin-left: 0;
+    width: 90%;
+  }
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.leftDottedCurve {
+  margin-top: 80px;
+  margin-right: 40px;
+}
+
+.rightDottedCurve {
+  margin-top: 80px;
+  margin-left: -40px;
+}

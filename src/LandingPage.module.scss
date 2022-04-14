@@ -3,29 +3,39 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .heroSectionContainer {
-  height: 1400px;
-  background-color: #181818;
+  height: auto;
+  padding-bottom: 120px;
+  background-color: #191c27;
   padding-left: 120px;
+@media screen and (max-width: 768px) {
+  padding-left: 40px;
+}
 }
 .title {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 170px;
+  width: 200px;
   height: 96px;
   padding: 12px 24px 32px 0px;
   font-family: DM Sans;
   font-style: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   color: #fbf6ef;
 }
+
 .heroSection {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+@media screen and (max-width: 768px) {
+  flex-direction: column;
+}
 }
 .heroText {
   width: 580px;
@@ -34,49 +44,124 @@
   font-size: 32px;
   line-height: 52px;
   color: #fbf6ef;
+@media screen and (max-width: 768px) {
+  width: 100%;
+  font-size: 24px;
+  line-height: 40px;
+}
 }
 .heroTextBlack {
-  @extend .heroText;
-  color: #181818;
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 600;
+  color: #191C27;
+  
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+    line-height: 38px;
+  
+  }
 }
 .mar_top_48 {
   margin-top: 48px;
 }
-.mar_top_24 {
-  margin-top: 24px;
+.normalText {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
 }
+
 .heroDescriptionContainer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 80.5%;
+  width: 75%;
   margin-top: 116px;
+  margin-left: auto;
   background-color: #fbf6ef;
   border-radius: 56px 0px 0px 56px;
-  padding: 120px 80px 120px 80px;
+  padding: 60px;
+  
+  @media screen and (max-width: 768px) {
+    margin-left: 15px;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 16px 40px 16px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  }
+  
+  .dogImage {
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      height: auto;
+    }
 }
 .heroDescription {
   width: 500px;
   font-size: 18px;
   font-weight: 500;
   line-height: 28px;
+@media screen and (max-width: 768px) {
+  width: 100%;
+  font-size: 14px;
+  line-height: 24px;
+}
+}
+
+.heroImage {
+  width: 335px;
+  height: auto;
+  margin-top: 60px;
 }
 .buildCycleContainer {
   background-color: #fbf6ef;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 786px;
+  height: auto;
   padding: 120px;
+@media screen and (max-width: 768px) {
+  flex-direction: column;
+  padding: 40px 16px 40px 16px;
+}
 }
 .buildCycleText {
   width: 580px;
+@media screen and (max-width: 768px) {
+  width: 100%;
+}
+}
+
+.buildCycleImage {
+  @media screen and (max-width: 768px) {
+    width: 318px;
+    height: 323px;
+    margin-top: 15px;
+  }
 }
 .services {
-  height: 1400px;
-  background-color: #181818;
+  height: auto;
+  background-color: #191c27;
   padding: 120px;
+  background-image: url("./assets/images/background-symbols.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
   text-align: center;
+  position: relative;
+  
+  @media screen and (max-width: 768px) {
+    padding: 40px 16px 40px 16px;
+  }
+  }
+  
+  .pattern {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    transform: translateY(-60px);
 }
 .servicesCardsContainer {
   display: flex;
@@ -87,15 +172,183 @@
   gap: 41px;
   margin-top: 80px;
 }
-.usp{
+.usp {
   background-color: #fbf6ef;
-  height: 300px;
-  padding:120px 300px 120px 300px;
+  height: auto;
+  padding: 120px 300px 120px 300px;
   text-align: center;
+@media screen and (max-width: 768px) {
+  padding: 40px 16px 40px 16px;
+  }
 }
-.teamContainer{
+
+.teamContainer {
   padding: 160px;
   text-align: center;
-  height: 1539px;
+  height: auto;
   background-image: url("./assets/images/background-image.png");
+@media screen and (max-width: 768px) {
+  padding: 40px 16px 40px 16px;
+}
+}
+
+.teamCardsContainer {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 80vw;
+  max-width: 1220px;
+  margin-top: 80px;
+
+
+  @media screen and (max-width: 1024px) {
+    gap: 50px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 90px;
+  }
+}
+
+
+.div1 {
+  align-self: flex-start;
+
+
+}
+
+.div2 {
+  align-self: flex-end;
+  margin-top: -80px;
+
+  @media screen and (max-width: 1024px) {
+    margin-top: 0;
+    margin-right: 50px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 92vw;
+    margin: 0 auto;
+  }
+
+}
+
+.div3 {
+  align-self: flex-start;
+}
+
+.div4 {
+  align-self: flex-end;
+  margin-top: -80px;
+
+  @media screen and (max-width: 1024px) {
+    margin-top: 0;
+    margin-right: 50px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 92vw;
+    margin: 0 auto;
+  }
+
+}
+
+.div5 {
+  align-self: flex-start;
+}
+
+// .teamCardsContainer:nth-child(even) {
+//   align-self: flex-start;
+
+//   @media screen and (max-width: 768px) {
+//     justify-content: center;
+
+//   }
+
+// }
+
+// .teamCardsContainer:nth-child(odd) {
+//   justify-content: flex-end;
+
+//   @media screen and (max-width: 768px) {
+//     justify-content: center;
+//   }
+// }
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+  height: auto;
+  background-color: #fbf6ef;
+  padding: 100px 200px 100px 200px;
+  font-size: 40px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 64px;
+  text-align: center;
+  color: #191C27;
+
+  @media screen and (max-width: 768px) {
+    padding: 40px 16px 40px 16px;
+    font-size: 24px;
+    line-height: 40px;
+
+  }
+
+}
+
+.divider {
+  height: 1px;
+  width: 77%;
+  margin: 0 auto;
+  background-color: #191c27;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin: 10px 0px;
+  }
+}
+
+.footer {
+  height: auto;
+  background-color: #fbf6ef;
+  padding: 0px 160px 40px 160px;
+
+  @media screen and (max-width: 768px) {
+    padding: 40px 16px 40px 16px;
+  }
+}
+
+.footerTitle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #191c27;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 48px;
+  width: 250px;
+  padding-top: 40px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 200px;
+  }
+}
+
+.copyrightText {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #191c27;
 }

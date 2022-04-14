@@ -3,10 +3,13 @@ import { Typography } from "antd";
 
 import TalkToUsButton from "./components/molecules/talkToUsButton/TalkToUsButton";
 import ServiceCard from "./components/molecules/serviceCard/ServiceCard";
+import TeamCard from "./components/molecules/teamCard/TeamCard";
 
 import { servicesData } from "./constants/services.js";
+import { teamsData } from "./constants/teams";
 
 import flashtechLogo from "./assets/icons/flashtech-logo.png";
+import patternIcon from "./assets/icons/pattern.png";
 import heroImage from "./assets/images/data-report-image.png";
 import dogImage from "./assets/images/happy-dog.png";
 import buildCycle from "./assets/images/build-cycle.png";
@@ -21,6 +24,7 @@ const LandingPage = () => {
       <div className={styles.heroSectionContainer}>
         <div className={styles.title}>
           <img src={flashtechLogo} alt="flashtechLogo" />
+          &nbsp;
           <Text>Flash Analytics</Text>
         </div>
         <div className={styles.heroSection}>
@@ -37,7 +41,7 @@ const LandingPage = () => {
             </div>
           </div>
           <div>
-            <img src={heroImage} alt="heroImage" />
+            <img className={styles.heroImage} src={heroImage} alt="heroImage" />
           </div>
         </div>
         <div className={styles.heroDescriptionContainer}>
@@ -55,7 +59,7 @@ const LandingPage = () => {
             </Paragraph>
           </div>
           <div>
-            <img src={dogImage} alt="dogImage" />
+            <img className={styles.dogImage} src={dogImage} alt="dogImage" />
           </div>
         </div>
       </div>
@@ -72,10 +76,19 @@ const LandingPage = () => {
           </Text>
         </div>
         <div>
-          <img src={buildCycle} alt="buildCycle" />
+          <img
+            className={styles.buildCycleImage}
+            src={buildCycle}
+            alt="buildCycle"
+          />
         </div>
       </div>
       <div className={styles.services}>
+        {window.innerWidth > 768 && (
+          <div className={styles.pattern}>
+            <img src={patternIcon} alt="pattern" />
+          </div>
+        )}
         <div>
           <Text className={styles.heroText}>
             Our Services that help you build the &nbsp;
@@ -83,7 +96,7 @@ const LandingPage = () => {
           <Text className="orangeGradientText">
             right user <br /> experiences
           </Text>
-          <Text> to </Text>
+          <Text className={styles.heroText}> to </Text>
           <Text className="orangeGradientText">grow your business</Text>
         </div>
         <div className={styles.servicesCardsContainer}>
@@ -93,10 +106,12 @@ const LandingPage = () => {
         </div>
       </div>
       <div className={styles.usp}>
-        <Text className={styles.heroTextBlack}>Don't get caught in &nbsp;</Text>
-        <Text className="orangeGradientText">analysis paralysis</Text>
+        <Text className={styles.heroTextBlack}>
+          Don't get caught in &nbsp;
+          <Text className="orangeGradientText">analysis paralysis</Text>
+        </Text>
         <br />
-        <Text className={styles.mar_top_24}>
+        <Text className={styles.normalText}>
           While our solution is comprehensive, we formulate an analytics program
           tailored for you, to keep metrics and numbers relevant to your
           business.
@@ -107,6 +122,32 @@ const LandingPage = () => {
           A business should be run like an{" "}
           <Text className="orangeGradientText">aquarium</Text>, where everybody{" "}
           <Text className="orangeGradientText">can see</Text> what’s going on
+        </Text>
+        <div className={styles.teamCardsContainer}>
+          {teamsData.map((team, i) => (
+            <div className={styles[`div${i + 1}`]}>
+              <TeamCard data={team} key={team.id} index={i} />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className={styles.contactContainer}>
+        <Text>
+          Know your customers better than they know themselves with Flash
+          Analytics
+        </Text>
+        <TalkToUsButton size="large" />
+      </div>
+      {window.innerWidth > 768 && <div className={styles.divider}></div>}
+      <div className={styles.footer}>
+        <div className={styles.footerTitle}>
+          <img src={flashtechLogo} alt="flashtechLogo" />
+          &nbsp;
+          <Text>Flash Analytics</Text>
+        </div>
+        {window.innerWidth <= 768 && <div className={styles.divider}></div>}
+        <Text className={styles.copyrightText}>
+          Copyright © 2022 Flash Analytics. All rights reserved
         </Text>
       </div>
     </div>

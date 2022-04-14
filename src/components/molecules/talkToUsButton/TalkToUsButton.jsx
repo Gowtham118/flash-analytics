@@ -11,7 +11,7 @@ const TalkToUsButton = ({ size }) => {
         className={size === "small" ? styles.smallButton : styles.largeButton}
       >
         <Text>Talk to us</Text>
-        <ArrowRightOutlined />
+        <ArrowRightOutlined className={styles.arrow} />
       </Button>
     </div>
   );
