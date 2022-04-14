@@ -138,14 +138,14 @@ const LandingPage = () => {
         </Text>
         <TalkToUsButton size="large" />
       </div>
-      {window.innerWidth > 768 && <div className={styles.divider}></div>}
       <div className={styles.footer}>
+        {window.innerWidth > 768 && <hr className={styles.divider} />}
         <div className={styles.footerTitle}>
           <img src={flashtechLogo} alt="flashtechLogo" />
           &nbsp;
           <Text>Flash Analytics</Text>
         </div>
-        {window.innerWidth <= 768 && <div className={styles.divider}></div>}
+        {window.innerWidth <= 768 && <hr className={styles.divider} />}
         <Text className={styles.copyrightText}>
           Copyright © 2022 Flash Analytics. All rights reserved
         </Text>
