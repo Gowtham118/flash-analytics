@@ -26,6 +26,7 @@ code {
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
 }
 
 @media screen and (max-width: 768px) {
