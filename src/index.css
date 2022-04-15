@@ -23,6 +23,7 @@ code {
     #ff7500 50%,
     #e56900 84.71%
   );
+  background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

@@ -94,10 +94,14 @@ const LandingPage = () => {
             Our Services that help you build the &nbsp;
           </Text>
           <Text className="orangeGradientText">
-            right user <br /> experiences
+            <span> right user </span> <br /> <span>experiences</span>
           </Text>
-          <Text className={styles.heroText}> to </Text>
-          <Text className="orangeGradientText">grow your business</Text>
+          <Text className={styles.heroText}>
+            <span> to</span>{" "}
+          </Text>
+          <Text className="orangeGradientText">
+            <span>grow your business</span>
+          </Text>
         </div>
         <div className={styles.servicesCardsContainer}>
           {servicesData.map((service) => (
@@ -108,7 +112,9 @@ const LandingPage = () => {
       <div className={styles.usp}>
         <Text className={styles.heroTextBlack}>
           Don't get caught in &nbsp;
-          <Text className="orangeGradientText">analysis paralysis</Text>
+          <Text className="orangeGradientText">
+            <span>analysis paralysis</span>
+          </Text>
         </Text>
         <br />
         <Text className={styles.normalText}>
