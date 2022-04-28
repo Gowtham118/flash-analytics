@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bc9ce6c7.css",
+    "main.js": "/static/js/main.5bed5781.js",
+    "static/media/background-image.png": "/static/media/background-image.1d47035a15f974d069af.png",
+    "static/media/data-report-image.png": "/static/media/data-report-image.5b992fcd800fc4b5db5c.png",
+    "static/media/build-cycle.png": "/static/media/build-cycle.12820c7e3ff283d4d50d.png",
+    "static/media/background-symbols.png": "/static/media/background-symbols.ae2de3c647b51e6bfb6b.png",
+    "static/media/happy-dog.png": "/static/media/happy-dog.f843e361cd17e8c64af2.png",
+    "static/media/engg-team.png": "/static/media/engg-team.986acc4fede876ac4a03.png",
+    "static/media/all-teams.png": "/static/media/all-teams.de0513e6dae7ec8e74bc.png",
+    "static/media/marketing-team.png": "/static/media/marketing-team.8602efe2da335ab096ac.png",
+    "static/media/support.png": "/static/media/support.132d0047ffca5a0fcb21.png",
+    "static/media/product-team.png": "/static/media/product-team.e7336a8a055ecc1031c0.png",
+    "index.html": "/index.html",
+    "main.bc9ce6c7.css.map": "/static/css/main.bc9ce6c7.css.map",
+    "main.5bed5781.js.map": "/static/js/main.5bed5781.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc9ce6c7.css",
+    "static/js/main.5bed5781.js"
+  ]
+}
