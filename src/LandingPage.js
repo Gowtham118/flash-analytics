@@ -97,7 +97,7 @@ const LandingPage = () => {
             <span> right user </span> <br /> <span>experiences</span>
           </Text>
           <Text className={styles.heroText}>
-            <span> to</span>{" "}
+            <span> to </span>
           </Text>
           <Text className="orangeGradientText">
             <span>grow your business</span>
