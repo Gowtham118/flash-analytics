@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Website : https://flash-analytics.co/
+
 Hello fellow dev, this project has CI/CD implemented using Github actions.
 
 If you are to deploy a new feature to production. Please follow these steps.
