@@ -53,9 +53,9 @@ const LandingPage = () => {
             </Paragraph>
             <br />
             <Paragraph>
-              After all, simply building your product rapidly,without measuring
-              and learning about your users gives the Imagery of a dog chasing
-              its tail,really fast.
+              After all, simply building your product rapidly, without measuring
+              and learning about your users gives the imagery of a dog chasing
+              its tail, really fast.
             </Paragraph>
           </div>
           <div>
@@ -68,11 +68,11 @@ const LandingPage = () => {
           <Text>At Flash Analytics,</Text>
           <br />
           <Text className={styles.heroTextBlack}>
-            we provide a hassle-free way to help you establish a robust
+            We provide a hassle-free way to help you establish a robust
           </Text>
           <br />
           <Text className="orangeGradientText">
-            build,measure and learn loop.
+            build, measure and learn loop.
           </Text>
         </div>
         <div>
@@ -94,7 +94,7 @@ const LandingPage = () => {
             Our Services that help you build the &nbsp;
           </Text>
           <Text className="orangeGradientText">
-            <span> right user </span> <br /> <span>experiences</span>
+            <span>right user </span> <br /> <span>experiences</span>
           </Text>
           <Text className={styles.heroText}>
             <span> to </span>
@@ -126,8 +126,8 @@ const LandingPage = () => {
       <div className={styles.teamContainer}>
         <Text className={styles.heroText}>
           A business should be run like an{" "}
-          <Text className="orangeGradientText">aquarium</Text>, where everybody{" "}
-          <Text className="orangeGradientText">can see</Text> what’s going on
+          <Text className="orangeGradientText">aquarium</Text>, where everybody is aligned with the{" "}
+          <Text className="orangeGradientText">business's vision</Text>
         </Text>
         <div className={styles.teamCardsContainer}>
           {teamsData.map((team, i) => (
