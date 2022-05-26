@@ -1,6 +1,6 @@
 import { PopupButton } from "@typeform/embed-react";
 import { ArrowRightOutlined } from "@ant-design/icons";
-import { Button, Typography } from "antd";
+import {  Typography } from "antd";
 
 import styles from "./TalkToUsButton.module.scss";
 
