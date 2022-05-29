@@ -166,10 +166,10 @@ const LandingPage = () => {
         </div>
         <div >
           <div className={styles.socialMediaIcons}>
-            <a href="">
+            <a href="https://www.linkedin.com/company/flash-tech-company/mycompany/">
               <img src={linkedInIcon} alt="LinkedIn" />
             </a>
-            <a href="">
+            <a href="https://angel.co/company/flash-tech-company">
               <img src={angelListIcon} alt="AngelList" />
             </a>
           </div>
