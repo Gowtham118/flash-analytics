@@ -1,0 +1,69 @@
+.interviewersShowcase {
+    padding: 24px 200px;
+    background: #FBF6EF;
+
+
+    &__title {
+        font-size: 40px;
+        line-height: 60px;
+        font-weight: 600;
+        color: #191C27;
+        margin-bottom: 72px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    &__companyLogos__container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 80px;
+        width: 750px;
+
+        @media screen and (max-width: 900px) {
+            width: 100%;
+            justify-content: center;
+        }
+
+        &__logoWrapper {
+            width: 192px;
+            height: 48px;
+
+            @media screen and (max-width: 900px) {
+                width: 120px;
+                height: 30px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        padding: 20px;
+    }
+
+}
+
+
+@media screen and (min-width: 900px) {
+    .interviewersShowcase__companyLogos__parentContainer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 3750px;
+        white-space: nowrap;
+        will-change: transform;
+        animation: marqueeContainer 32s linear infinite;
+    }
+
+    @keyframes marqueeContainer {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-50%);
+        }
+    }
+
+    .marqueeContainer {
+        overflow: hidden;
+    }
+}

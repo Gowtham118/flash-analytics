@@ -4,6 +4,8 @@ import { Typography } from "antd";
 import TalkToUsButton from "./components/molecules/talkToUsButton/TalkToUsButton";
 import ServiceCard from "./components/molecules/serviceCard/ServiceCard";
 import TeamCard from "./components/molecules/teamCard/TeamCard";
+import CompaniesShowcase from "./components/companiesShowcase/CompaniesShowcase";
+import MeetTheTeam from "./components/meetTheTeam/MeetTheTeam";
 
 import { servicesData } from "./constants/services.js";
 import { teamsData } from "./constants/teams";
@@ -13,6 +15,8 @@ import patternIcon from "./assets/icons/pattern.png";
 import heroImage from "./assets/images/data-report-image.png";
 import dogImage from "./assets/images/happy-dog.png";
 import buildCycle from "./assets/images/build-cycle.png";
+import linkedInIcon from "./assets/icons/social-media/Linkedin.png";
+import angelListIcon from "./assets/icons/social-media/Angellist.png";
 
 import styles from "./LandingPage.module.scss";
 
@@ -126,7 +130,8 @@ const LandingPage = () => {
       <div className={styles.teamContainer}>
         <Text className={styles.heroText}>
           A business should be run like an{" "}
-          <Text className="orangeGradientText">aquarium</Text>, where everybody is aligned with the{" "}
+          <Text className="orangeGradientText">aquarium</Text>, where everybody
+          is aligned with the{" "}
           <Text className="orangeGradientText">business's vision</Text>
         </Text>
         <div className={styles.teamCardsContainer}>
@@ -137,6 +142,8 @@ const LandingPage = () => {
           ))}
         </div>
       </div>
+      <CompaniesShowcase />
+      <MeetTheTeam />
       <div className={styles.contactContainer}>
         <Text>
           Know your customers better than they know themselves with Flash
@@ -144,17 +151,35 @@ const LandingPage = () => {
         </Text>
         <TalkToUsButton size="large" />
       </div>
+          {window.innerWidth > 768 && <hr className={styles.divider} />}
       <div className={styles.footer}>
-        {window.innerWidth > 768 && <hr className={styles.divider} />}
-        <div className={styles.footerTitle}>
-          <img src={flashtechLogo} alt="flashtechLogo" />
-          &nbsp;
-          <Text>Flash Analytics</Text>
+        <div>
+          <div className={styles.footerTitle}>
+            <img src={flashtechLogo} alt="flashtechLogo" />
+            &nbsp;
+            <Text>Flash Analytics</Text>
+            {window.innerWidth <= 768 && <hr className={styles.divider} />}
+          </div>
+          <Text className={styles.copyrightText}>
+            Copyright © 2022 Flash Analytics. All rights reserved
+          </Text>
         </div>
-        {window.innerWidth <= 768 && <hr className={styles.divider} />}
-        <Text className={styles.copyrightText}>
-          Copyright © 2022 Flash Analytics. All rights reserved
-        </Text>
+        <div >
+          <div className={styles.socialMediaIcons}>
+            <a href="">
+              <img src={linkedInIcon} alt="LinkedIn" />
+            </a>
+            <a href="">
+              <img src={angelListIcon} alt="AngelList" />
+            </a>
+          </div>
+          <Text>
+            Contact Info -{" "}
+            <a href="mailto:info@flash-tech.co">
+              <span>info@flash-tech.co</span>
+            </a>
+          </Text>
+        </div>
       </div>
     </div>
   );
