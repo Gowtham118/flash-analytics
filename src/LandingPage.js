@@ -158,8 +158,8 @@ const LandingPage = () => {
             <img src={flashtechLogo} alt="flashtechLogo" />
             &nbsp;
             <Text>Flash Analytics</Text>
-            {window.innerWidth <= 768 && <hr className={styles.divider} />}
           </div>
+            {window.innerWidth <= 768 && <hr className={styles.divider} />}
           <Text className={styles.copyrightText}>
             Copyright © 2022 Flash Analytics. All rights reserved
           </Text>
