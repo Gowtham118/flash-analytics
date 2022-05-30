@@ -5,10 +5,11 @@
     cursor: pointer;
 
     &__image {
-        width: 100%;
-        height: 100%;
+        // width: 100%;
+        // height: 100%;
         border-radius: 20px;
         object-fit: cover;
+        // background-image: linear-gradient(to bottom , #191c27 0%, #191c27 100%);
     }
 
     &__Content {
@@ -22,14 +23,14 @@
             font-size: 16px;
             font-weight: 500;
             line-height: 21px;
-            text-shadow: 3px 3px 4px #191c27;
+            // text-shadow: 3px 3px 4px #191c27;
         }
         
         &__designation {
             font-size: 14px;
             font-weight: 300;
             line-height: 21px;
-            text-shadow: 3px 3px 4px #191c27;
+            // text-shadow: 3px 3px 4px #191c27;
         }
     }
 }
