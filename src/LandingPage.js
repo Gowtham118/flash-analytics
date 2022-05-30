@@ -19,6 +19,7 @@ import linkedInIcon from "./assets/icons/social-media/Linkedin.png";
 import angelListIcon from "./assets/icons/social-media/Angellist.png";
 
 import styles from "./LandingPage.module.scss";
+import BlogIntegration from "./components/blogIntegration/BlogIntegration";
 
 const { Text, Paragraph } = Typography;
 
@@ -151,6 +152,7 @@ const LandingPage = () => {
         </Text>
         <TalkToUsButton size="large" />
       </div>
+      <BlogIntegration/>
           {window.innerWidth > 768 && <hr className={styles.divider} />}
       <div className={styles.footer}>
         <div>
@@ -177,6 +179,12 @@ const LandingPage = () => {
             Contact Info -{" "}
             <a href="mailto:info@flash-tech.co">
               <span>info@flash-tech.co</span>
+            </a>
+          </Text>
+          <br/>
+          <Text>
+            <a href="https://wordpress.com/home/blogflashanalytics.wordpress.com">
+              <span className={styles.ourBlog}>Our Blog</span>
             </a>
           </Text>
         </div>
