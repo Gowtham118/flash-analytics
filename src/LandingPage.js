@@ -153,7 +153,7 @@ const LandingPage = () => {
         <TalkToUsButton size="large" />
       </div>
       <BlogIntegration/>
-          {window.innerWidth > 768 && <hr className={styles.divider} />}
+          {/* {window.innerWidth > 768 && <hr className={styles.divider} />} */}
       <div className={styles.footer}>
         <div>
           <div className={styles.footerTitle}>
@@ -171,7 +171,7 @@ const LandingPage = () => {
             <a href="https://www.linkedin.com/company/flash-tech-company/mycompany/">
               <img src={linkedInIcon} alt="LinkedIn" />
             </a>
-            <a href="https://angel.co/company/flash-tech-company">
+            <a href="https://angel.co/company/flash-tech-company" target="_blank" rel="noreferrer">
               <img src={angelListIcon} alt="AngelList" />
             </a>
           </div>
