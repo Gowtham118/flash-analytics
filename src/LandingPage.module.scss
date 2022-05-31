@@ -1,15 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
-html {
-  -ms-overflow-style: none; /* for Internet Explorer, Edge */
-  scrollbar-width: none; /* for Firefox */
-  overflow-y: scroll; 
-}
 
-html::-webkit-scrollbar {
-  display: none; /* for Chrome, Safari, and Opera */
-}
 .container {
   margin: 0;
   padding: 0;
@@ -152,7 +144,7 @@ html::-webkit-scrollbar {
   justify-content: space-around;
   align-items: center;
   height: auto;
-  padding: 120px;
+  padding: 80px 120px;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -179,7 +171,7 @@ html::-webkit-scrollbar {
 .services {
   height: auto;
   background-color: #191c27;
-  padding: 120px;
+  padding: 80px 120px;
   background-image: url("./assets/images/background-symbols.png");
   background-position: right bottom;
   background-repeat: no-repeat;
@@ -211,7 +203,7 @@ html::-webkit-scrollbar {
 .usp {
   background-color: #fbf6ef;
   height: auto;
-  padding: 120px 300px 120px 300px;
+  padding: 80px 300px;
   text-align: center;
 
   @media screen and (max-width: 768px) {
@@ -220,7 +212,7 @@ html::-webkit-scrollbar {
 }
 
 .teamContainer {
-  padding: 160px;
+  padding: 80px 160px;
   text-align: center;
   height: auto;
   background-image: url("./assets/images/background-image.png");

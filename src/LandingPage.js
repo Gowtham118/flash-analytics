@@ -152,8 +152,9 @@ const LandingPage = () => {
         </Text>
         <TalkToUsButton size="large" />
       </div>
-      <BlogIntegration/>
-          {/* {window.innerWidth > 768 && <hr className={styles.divider} />} */}
+      {/* Disabling blog integrtion section for time being , when enabling comment ou the divider below <BlogIntergration/> */}
+      {/* <BlogIntegration/>  */}
+          {window.innerWidth > 768 && <hr className={styles.divider} />}
       <div className={styles.footer}>
         <div>
           <div className={styles.footerTitle}>

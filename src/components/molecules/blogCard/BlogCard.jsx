@@ -7,7 +7,7 @@ const BlogCard = ({ data }) => {
     <a href={data.blogLink}>
       <div className={styles.cardContainer} >
         <div className={styles.cardImage}>
-          <img src={data.image} alt="service icon" />
+          <img src={data.image} alt="Blog" />
         </div>
         <div className={styles.cardTitle}>{data.title}</div>
         <div className={styles.cardText}>{data.description}</div>

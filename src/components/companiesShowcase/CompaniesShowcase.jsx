@@ -32,11 +32,10 @@ const CompaniesShowcase = () => {
   return (
     <div className={styles.interviewersShowcase}>
       <div className={styles.interviewersShowcase__title}>
-        <span>Our techies are </span>
+        <span>Our clients trust us in helping them iterate to a better product via an&nbsp;</span>
         <span className="orangeGradientText">
-          experienced interviewers&nbsp;
+        analytics framework &nbsp;
         </span>
-        <span>who hail from</span>
       </div>
       <div className={styles.marqueeContainer}>
         <div
