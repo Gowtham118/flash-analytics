@@ -19,7 +19,7 @@ import linkedInIcon from "./assets/icons/social-media/Linkedin.png";
 import angelListIcon from "./assets/icons/social-media/Angellist.png";
 
 import styles from "./LandingPage.module.scss";
-import BlogIntegration from "./components/blogIntegration/BlogIntegration";
+// import BlogIntegration from "./components/blogIntegration/BlogIntegration";
 
 const { Text, Paragraph } = Typography;
 
@@ -153,8 +153,8 @@ const LandingPage = () => {
         <TalkToUsButton size="large" />
       </div>
       {/* Disabling blog integrtion section for time being , when enabling comment ou the divider below <BlogIntergration/> */}
-      <BlogIntegration/> 
-          {window.innerWidth > 768 && <hr className={styles.divider} />}
+      {/* <BlogIntegration/>  */}
+          {/* {window.innerWidth > 768 && <hr className={styles.divider} />} */}
       <div className={styles.footer}>
         <div>
           <div className={styles.footerTitle}>
